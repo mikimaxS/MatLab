@@ -31,6 +31,7 @@ function [] = animation_3D(VELOCITY)
     
         %update the surface
         surf(x,y,z, EdgeColor="none");      %animacja ruchu fali    % brak koloru krawedzi macierzy
+        axis([x_range y_range z_range]);  
         shading ('interp');                 % Interpolation                                         
                                             %Interpolation is a technique for adding new data points within a range of a set of known data points. 
                                             %You can use interpolation to fill-in missing data, smooth existing data, make predictions, and more.                
